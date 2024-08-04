@@ -1,0 +1,16 @@
+base_model: OpenPipe/mistral-ft-optimized-1218
+experts:
+  - source_model: SanjiWatsuki/Kunoichi-DPO-v2-7B
+    positive_prompts:
+    - "industry"
+    - "write"
+    - "explain"
+    - "netflix"
+    - "movie"
+  - source_model: mlabonne/NeuralDaredevil-7B
+    positive_prompts:
+    - "IMDB"
+    - "ranked"
+    - "ratings"
+    - "rated"
+    - "count"
